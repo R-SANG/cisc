@@ -41,8 +41,8 @@ class IndexMaker():
             line_no += 1
 
     def write_index(self, local_file_name):
-        if os.path.exists(local_file_name):
-            os.remove(local_file_name)
+        #if os.path.exists(local_file_name):
+            #os.remove(local_file_name)
         local_file = open(local_file_name, 'w')
         self.index_by_word = collections.OrderedDict(sorted(self.index_by_word.items()))
         for word in self.index_by_word:
